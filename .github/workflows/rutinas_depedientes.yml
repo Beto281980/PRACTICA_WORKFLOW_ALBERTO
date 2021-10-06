@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "tarea 1"
-   build:
+  build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
       -run: echo "tarea 2"
-    test:
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "tarea 3"
+  test:
+     needs: build
+     runs-on: ubuntu-latest
+     steps:
+       - run: echo "tarea 3"
