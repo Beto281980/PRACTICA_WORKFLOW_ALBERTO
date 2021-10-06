@@ -1,10 +1,9 @@
 name: Al abrir Issues
-on:
+on: 
   issues:
-    types: closed
-    
+    types: [opened,closed]
 jobs:
   AlAbrir:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Caso Abierto ${{ github.event.issue.number }}"
+      - run: echo "Caso Abierto / Cerrado ${{ github.event.issue.number }}"
