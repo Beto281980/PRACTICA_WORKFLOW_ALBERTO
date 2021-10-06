@@ -7,12 +7,12 @@ jobs:
     steps:
       - run: echo "tarea 1"
   build:
-    needs: setup
+   needs: setup
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "tarea 2"
+  test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      -run: echo "tarea 2"
-  test:
-     needs: build
-     runs-on: ubuntu-latest
-     steps:
-       - run: echo "tarea 3"
+      - run: echo "tarea 3"
