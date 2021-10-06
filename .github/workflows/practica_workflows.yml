@@ -1,3 +1,4 @@
+name: Al abrir Issues
 on:
   issues:
     types: opened
