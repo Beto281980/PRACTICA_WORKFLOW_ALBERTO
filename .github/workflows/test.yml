@@ -1,7 +1,7 @@
 name: Test
 on: push
 jobs:
-  tarea1:
+ tarea1:
   name: Taaea 1
   runs-on: ubuntu-latest
   steps:
