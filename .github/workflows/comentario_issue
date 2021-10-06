@@ -1,4 +1,4 @@
-on:
+on: issue_comment
 jobs:
   issue_commented:
     name: Issue comment
