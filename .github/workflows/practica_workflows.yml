@@ -1,7 +1,8 @@
 name: Al abrir Issues
 on:
   issues:
-    types: opened
+    types: closed
+    
 jobs:
   AlAbrir:
     runs-on: ubuntu-latest
