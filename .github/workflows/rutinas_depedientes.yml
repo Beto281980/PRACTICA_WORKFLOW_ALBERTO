@@ -11,5 +11,5 @@ jobs:
     test:
       needs: build
       runs-on: ubuntu-latest
-        steps:
-          - run: echo "tarea 3"
+      steps:
+        - run: echo "tarea 3"
